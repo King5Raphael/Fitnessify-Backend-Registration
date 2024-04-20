@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h1>My Profile </h1>
+Hello, {{ request.user.username }}
+<p>Welcome to Fitnessify</p>
+<p>
+    You have successfully logged in.
+    When done click here <a href="{% url 'login' %}">log out</a>
+</p>
+{% endblock %}
